@@ -1,0 +1,28 @@
+sudo: false
+language: node_js
+node_js:
+  - 10 # use nodejs v10 LTS
+cache: npm
+branches:
+  only:
+    - master # build master branch only
+install:
+  - npm install
+  - npm install css-select@^2.1.0 --save
+  - npm install hexo-generator-search@^2.4.0 --save
+  - npm install lodash.assignin@^4.2.0 --save
+  - npm install lodash.bind@^4.2.1 --save
+  - npm install lodash.foreach@^4.5.0 --save
+  - npm install lodash.merge@^4.6.2 --save
+  - npm install lodash.pick@^4.4.0 --save
+
+script:
+  - hexo generate # generate static files
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local-dir: public
