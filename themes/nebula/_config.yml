@@ -1,7 +1,7 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  修复状态: /tags
+  标签: /archives
 rss: /atom.xml
 
 # Content
