@@ -1,17 +1,18 @@
 <!-- Disqus Comments -->
-<% if (theme.disqus_shortname){ %>
-    <script type="text/javascript">
-        var disqus_shortname = '<%= theme.disqus_shortname %>';
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
-    </script>
-<% } %>
-
+ <div id='disqus_thread'/></div>
+<script>
+var dsqjs = new DisqusJS({
+    shortname: 'moe-cyfan-top',
+    siteName: 'MoeChenYFan',
+    title: document.title,
+    api: 'disqusjs-proxy-example-git-master.chenyfan.vercel.app',
+    apikey: 'EKQxDiPeaMUz6MH5VTs18uNuUTx413IVUMXOPD9CmRyuPaoLRk9jateKQzx1WNPR',
+    admin: 'disqus_GuqqmLDhoF',
+    adminLabel: 'MoeC',
+});
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
+<script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 
 <%- js('https://cdn.jsdelivr.net/gh/ChenYFan/xuehaibroker@gh-pages/js/main') %>
