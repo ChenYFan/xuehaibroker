@@ -15,8 +15,10 @@ install:
   - npm install lodash.foreach@^4.5.0 --save
   - npm install lodash.merge@^4.6.2 --save
   - npm install lodash.pick@^4.4.0 --save
-
+  - npm install --save hexo-blog-encrypt
 script:
+  - rm -rf ./source
+  - git clone https://{$GH_TOKEN}@github.com/ChenYFan/JaillBreakXHPost.git source
   - hexo generate # generate static files
 deploy:
   provider: pages
