@@ -18,7 +18,7 @@ install:
   - npm install --save hexo-blog-encrypt
 script:
   - rm -rf ./source
-  - git clone https://x-access-token:{$GH_TOKEN}@github.com/ChenYFan/JaillBreakXHPost.git source
+  - git clone https://x-access-token:$GH_TOKEN@github.com/ChenYFan/JaillBreakXHPost.git source
   - hexo generate # generate static files
 deploy:
   provider: pages
