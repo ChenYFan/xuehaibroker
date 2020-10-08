@@ -106,5 +106,4 @@ hexo_external_link:
   html_file_name: 'https://jump.cyfan.workers.dev/'
   target_blank: true
   link_rel: 'external nofollow noopener noreferrer'
-  domain: 'xuehaibroker.cf'
   safety_chain: true
