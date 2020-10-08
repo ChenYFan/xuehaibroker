@@ -100,7 +100,7 @@ theme: nebula
 deploy:
   type: ''
 nofollow:
-	enable: true
-	exclude:
-    - exclude1.com
-    - exclude2.com
+  enable: true
+  exclude:
+    - baidu.com
+
