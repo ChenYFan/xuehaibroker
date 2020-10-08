@@ -102,7 +102,7 @@ deploy:
 hexo_external_link:
   enable: true
   enable_base64_encode: false
-  url_param_name: 'u'
+  url_param_name: 'url'
   html_file_name: 'https://jump.cyfan.workers.dev/'
   target_blank: true
   link_rel: 'external nofollow noopener noreferrer'
