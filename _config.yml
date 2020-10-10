@@ -107,3 +107,7 @@ hexo_external_link:
   target_blank: true
   link_rel: 'external nofollow noopener noreferrer'
   safety_chain: true
+admin:
+  username: username
+  password_hash: be121740bf988b2225a313fa1f107ca1
+  secret: 12345xqwrxeqr2wqrxewxr32qwqwewsweewewewewewewewewewewewewewew
